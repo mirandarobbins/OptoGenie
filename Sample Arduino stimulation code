@@ -1,0 +1,26 @@
+This example code is in the public domain.
+
+  */
+int blue_laser = 9;
+
+// the setup routine runs once when you press reset:
+void setup() {
+   // declare pin 9 to be an output:
+   pinMode(blue_laser, OUTPUT);
+}
+
+// the loop routine runs over and over again forever, HIGH =laser is on eg. 10 ms, LOW = laser is off eg. 33 ms:
+void loop() {
+   digitalWrite(blue_laser, HIGH);
+   delay(10);
+   digitalWrite(blue_laser, LOW);
+   delay(33);
+   digitalWrite(blue_laser, HIGH);
+   delay(10);
+    digitalWrite(blue_laser, LOW);
+   delay(33);
+    digitalWrite(blue_laser, HIGH);
+   delay(10);
+   digitalWrite(blue_laser, LOW);
+   delay(10000);
+   }
